@@ -26,7 +26,7 @@ public class Tipo {
     @JsonIgnore
     private Evento evento;
     @Enumerated(EnumType.STRING)
-    private Formato formato;
+    private Setor setor;
     @Enumerated(EnumType.STRING)
     private Definicao definicao;
     private Double valor;
@@ -36,13 +36,22 @@ public class Tipo {
     @JsonIgnore
     private List<Ingresso> ingressos = new ArrayList<>();
 
-    private Tipo() {}
+    private Tipo() {
+    }
 
-    public Tipo(Formato formato, Definicao definicao, Double valor, int totalDisponivel) {
-        this.formato = formato;
+    public Tipo(Setor setor, Definicao definicao, Double valor, int totalDisponivel) {
+        this.setor = setor;
         this.definicao = definicao;
         this.valor = valor;
         this.totalDisponivel = totalDisponivel;
+    }
+
+    public Setor getSetor() {
+        return setor;
+    }
+
+    public void setSetor(Setor setor) {
+        this.setor = setor;
     }
 
     public Long getId() {
@@ -59,14 +68,6 @@ public class Tipo {
 
     public void setEvento(Evento evento) {
         this.evento = evento;
-    }
-
-    public Formato getFormato() {
-        return formato;
-    }
-
-    public void setFormato(Formato formato) {
-        this.formato = formato;
     }
 
     public Definicao getDefinicao() {
