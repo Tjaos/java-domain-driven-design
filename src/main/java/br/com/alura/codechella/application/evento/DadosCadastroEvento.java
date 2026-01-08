@@ -2,7 +2,7 @@ package br.com.alura.codechella.application.evento;
 
 import br.com.alura.codechella.domain.evento.Categoria;
 import br.com.alura.codechella.infra.ingresso.DadosCadastroTipoIngresso;
-import br.com.alura.codechella.infra.evento.DadosEndereco;
+import br.com.alura.codechella.DadosEndereco;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotBlank;

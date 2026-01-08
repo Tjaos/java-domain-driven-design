@@ -1,4 +1,4 @@
-package br.com.alura.codechella.infra.evento;
+package br.com.alura.codechella;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Positive;
