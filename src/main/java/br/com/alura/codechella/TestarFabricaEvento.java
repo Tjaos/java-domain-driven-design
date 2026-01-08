@@ -1,7 +1,7 @@
 package br.com.alura.codechella;
 
-import br.com.alura.codechella.domain.evento.Categoria;
-import br.com.alura.codechella.domain.evento.Evento;
+import br.com.alura.codechella.vendas.domain.evento.Categoria;
+import br.com.alura.codechella.vendas.domain.evento.Evento;
 
 import java.time.LocalDateTime;
 
