@@ -1,5 +1,6 @@
 package br.com.alura.codechella.infra.evento;
 
+import br.com.alura.codechella.DadosEndereco;
 import jakarta.persistence.Embeddable;
 
 @Embeddable
